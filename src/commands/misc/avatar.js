@@ -1,6 +1,7 @@
 const { ApplicationCommandOptionType } = require('discord.js');
 
 module.exports = {
+    deleted: false,
     name: 'avatar',
     description: '📷 Take a look at someones avatar',
     testOnly: true,
@@ -13,17 +14,31 @@ module.exports = {
     ],
 
     callback: async (client, interaction) => {
-        const member = interaction.options.getMember('member') ?? interaction.member;
-
         await interaction.deferReply();
-        
 
-        const embed = {
+        const member = interaction.options.getMember('member') ?? interaction.member;
+        const requestUserRole = interaction.member.roles.cache;
+        const requiredRole = ['1296071593075675148'];
+
+        // Embeds \\
+        const embedSuccess = {
             description: `🖼️ ${member}`,
             image: { url: `${member.displayAvatarURL({ dynamic: true, size: 2048 })}` },
             color: 0xff8533,
         }
+        const embedMissingRole = {
+            description: `You need to be <@&1296071593075675148> to run this command.`,
+            color: 0xff0000,
+        }
 
-        interaction.editReply({ embeds: [embed] });
+        // if (!interaction.member.roles.cache.has('1296071593075675148')) {
+        if (!requiredRole.some(roleId => interaction.member.roles.cache.has(roleId))) {
+            interaction.editReply({ embeds: [embedMissingRole] });
+            return;
+        } else {
+            interaction.editReply({ embeds: [embedSuccess] });
+        }
+
+        
     },
 };
