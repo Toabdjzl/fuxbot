@@ -8,13 +8,13 @@ Some features are global and some are just for a specific community.
 
 ## 🤖 Automations
 
-### 📢 AutoPublishing
+### 📢 AutoPublishing (unfinished)
 > `/autopublish <add | remove | list>`
 
-### 🙂 AutoReaction
+### 🙂 AutoReaction (unfinished)
 > `/autoreact <add | remove | edit | list>`
 
-### 🧵 AutoThreading
+### 🧵 AutoThreading (unfinished)
 > `/autothread <add | remove | list>`
 
 Currently, AutoThreading just has some basic functionality which you cannot edit. Once a channel is registered it will create a new thread after every message and will delete the thread if the message is deleted.
