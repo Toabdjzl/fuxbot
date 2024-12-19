@@ -1,10 +1,7 @@
 module.exports = {
     name: 'ping',
     description: "⚡ Check the bots response time",
-    devOnly: false,
-    testOnly: true,
-    // options: Object[],
-    // deleted: Boolean,
+    devOnly: true,
 
     callback: async (client, interaction) => {
         await interaction.deferReply({ ephemeral: true });
