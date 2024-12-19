@@ -1,6 +1,6 @@
 # 🦊 Fuxbot
 
-Absolutely not working. Well, there is nothing else to say. Fuxbot is my personal learn-to-code bot where everything started. The mission is clear: develop features which are spot on for my communities. Anything else is bonus.
+Absolutely not working. Well, there is nothing else to say. Fuxbot is my personal learn-to-code bot where everything started. The mission was clear: develop features which are spot on for my communities, anything else is bonus. Things have changed and now the plan is to make a public ready bot which is manageable by admins in every community.
 
 # 🪄 Features
 
