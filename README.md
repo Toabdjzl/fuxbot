@@ -4,7 +4,7 @@ Absolutely not working. Well, there is nothing else to say. Fuxbot is my persona
 
 # 🪄 Features
 
-Some features are global and some are just for a specific community. This version of the bot contains a custom command and event handler.
+Some features are global and some are just for a specific community.
 
 ## 🤖 Automations
 
