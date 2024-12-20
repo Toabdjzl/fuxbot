@@ -8,6 +8,9 @@ Some features are global and some are just for a specific community.
 
 ## 🤖 Automations
 
+### 🗑️ AutoDelete (unfinished)
+> `/autodelete <add | remove | list>`
+
 ### 📢 AutoPublishing (unfinished)
 > `/autopublish <add | remove | list>`
 
