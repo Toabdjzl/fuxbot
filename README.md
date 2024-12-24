@@ -1,39 +1,41 @@
 # 🦊 Fuxbot
 
-Absolutely not working. Well, there is nothing else to say. Fuxbot is my personal learn-to-code bot where everything started. The mission was clear: develop features which are spot on for my communities, anything else is bonus. Things have changed and now the plan is to make a public ready bot which is manageable by admins in every community.
+Absolutely not working. Well, there is nothing else to say. Fuxbot is my personal learn-to-code bot where everything started. The mission was clear: develop features which are spot on for my communities, anything else is bonus. Times have changed and now the plan is to make a public ready bot which is manageable by admins in every community.
 
-# 🪄 Features
-
-Some features are global and some are just for a specific community.
+# ✨ Features
 
 ## 🤖 Automations
 
-### 🗑️ AutoDelete (unfinished)
+*Manage your community without being online. This is true magic.*
+
+### 🗑️ AutoDelete
 > `/autodelete <add | remove | list>`
 
-### 📢 AutoPublishing (unfinished)
+### 📢 AutoPublishing
 > `/autopublish <add | remove | list>`
 
-### 🙂 AutoReaction (unfinished)
+### 🙂 AutoReaction
 > `/autoreact <add | remove | edit | list>`
 
-### 🧵 AutoThreading (unfinished)
+### 🧵 AutoThreading
 > `/autothread <add | remove | list>`
 
-Currently, AutoThreading just has some basic functionality which you cannot edit. Once a channel is registered it will create a new thread after every message and will delete the thread if the message is deleted.
-
 ## 🔧 Utilities
-### ⚡ "Ping"
-*Check the bots response time*
 
-### 📷 "Avatar"
-*Take a look at someones avatar*
+*Helpful commands to understand the bot better.*
 
-### 🪃 "Echo"
-*Replies with your input*
+- ⚡ `/ping` - Check the bots response time.
 
-### 🎣 "Game" (local)
-*Mention a game role to find a mate*
+## 🔐 Local
 
-### 🪦 "Revive" (local)
-*Ping the DeadChat role*
+*These features are only available for my own communities.*
+
+- 🪦 `/revive` - Ping the `@🪦 Dead-Chat` role to bring back people to the chat and boost short-time activity.
+- 🎣 `/game [game] (message)` - Mention a game role to find a team mate.
+- 🪃 `/echo [message]` - Replies with your input.
+- 📷 `/avatar (member)` - Take a look at someones avatar.
+- 🧹 `/prune [days] (roles)` - See how many members can be pruned from the server.
+
+## 💬 Messages (soon)
+
+*Build messages to your likings and send them manually, scheduled or make them sticky.*
