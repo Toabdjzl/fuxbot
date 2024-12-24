@@ -8,9 +8,6 @@ Absolutely not working. Well, there is nothing else to say. Fuxbot is my persona
 
 *Manage your community without being online. This is true magic.*
 
-### 🗑️ AutoDelete
-> `/autodelete <add | remove | list>`
-
 ### 📢 AutoPublishing
 > `/autopublish <add | remove | list>`
 
@@ -19,9 +16,6 @@ Absolutely not working. Well, there is nothing else to say. Fuxbot is my persona
 
 ### 🧵 AutoThreading
 > `/autothread <add | remove | list>`
-
-### ⭐ Starboard
-> `/starboard <add | remove | list>`
 
 ## 🔧 Utilities
 
