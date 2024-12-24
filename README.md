@@ -20,6 +20,9 @@ Absolutely not working. Well, there is nothing else to say. Fuxbot is my persona
 ### 🧵 AutoThreading
 > `/autothread <add | remove | list>`
 
+### ⭐ Starboard
+> `/starboard <add | remove | list>`
+
 ## 🔧 Utilities
 
 *Helpful commands to understand the bot better.*
