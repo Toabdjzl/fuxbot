@@ -26,6 +26,10 @@ Absolutely not working. Well, there is nothing else to say. Fuxbot is my persona
 
 - ⚡ `/ping` - Check the bots response time.
 
+## 💬 Messages (soon)
+
+*Build messages to your likings and send them manually, scheduled or make them sticky.*
+
 ## 🔐 Local
 
 *These features are only available for my own communities.*
@@ -35,7 +39,3 @@ Absolutely not working. Well, there is nothing else to say. Fuxbot is my persona
 - 🪃 `/echo [message]` - Replies with your input.
 - 📷 `/avatar (member)` - Take a look at someones avatar.
 - 🧹 `/prune [days] (roles)` - See how many members can be pruned from the server.
-
-## 💬 Messages (soon)
-
-*Build messages to your likings and send them manually, scheduled or make them sticky.*
