@@ -39,3 +39,9 @@ Absolutely not working. Well, there is nothing else to say. Fuxbot is my persona
 - 🪃 `/echo [message]` - Replies with your input.
 - 📷 `/avatar (member)` - Take a look at someones avatar.
 - 🧹 `/prune [days] (roles)` - See how many members can be pruned from the server.
+
+# 🆘 Support
+
+*Need help with something? Reach out to us on our Discord!*
+
+> https://discord.gg/UxUC6qT6d8
