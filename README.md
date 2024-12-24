@@ -29,10 +29,6 @@ Absolutely not working. Well, there is nothing else to say. Fuxbot is my persona
 
 - ⚡ `/ping` - Check the bots response time.
 
-## 💬 Messages (V2)
-
-*Build messages to your likings and send them manually, scheduled or make them sticky.*
-
 ## 🔐 Local
 
 *These features are only available for my own communities.*
