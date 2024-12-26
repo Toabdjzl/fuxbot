@@ -23,7 +23,6 @@
 - ⬆️ "Upgrade dependencies"
 - ⬇️ "Downgrade dependencies"
 - 📌 "Pin dependencies to specific versions"
-- 🔧 "Add or update configuration files"
 
 ## 🧩 Other
 
@@ -70,6 +69,7 @@
 - 💸 "Add sponsorship or money related infrastructure"
 - 🦺 "Add or update code related to validation"
 - 🔐 "Add or update secrets"
+- 🔧 "Add or update configuration files"
 
 ## 👨‍👩‍👧‍👦 New Contributors
 
