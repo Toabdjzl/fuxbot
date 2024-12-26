@@ -69,6 +69,7 @@
 - 🧑‍💻 "Improve developer experience"
 - 💸 "Add sponsorship or money related infrastructure"
 - 🦺 "Add or update code related to validation"
+- 🔐 "Add or update secrets"
 
 ## 👨‍👩‍👧‍👦 New Contributors
 
