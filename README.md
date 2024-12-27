@@ -30,7 +30,7 @@ Absolutely not working. Well, there is nothing else to say. Fuxbot is my persona
 
 - 🪦 `/revive` - Ping the `@🪦 Dead-Chat` role to bring back people to the chat and boost short-time activity.
 - 🎣 `/game [game] (message)` - Mention a game role to find a team mate.
-- 🪃 `/echo [message]` - Replies with your input.
+- 🪃 `/echo [message] (channel)` - Replies with your input.
 - 📷 `/avatar (member)` - Take a look at someones avatar.
 - 🧹 `/prune [days] (roles)` - See how many members can be pruned from the server.
 
