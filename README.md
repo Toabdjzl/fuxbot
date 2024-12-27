@@ -22,6 +22,7 @@ Absolutely not working. Well, there is nothing else to say. Fuxbot is my persona
 *Helpful commands to understand the bot better.*
 
 - ⚡ `/ping` - Check the bots response time.
+- 🆘 `/help` - Show help information for Fuxbot. 
 
 ## 🔐 Local
 
