@@ -49,7 +49,7 @@ module.exports = {
             await Promise.all([cooldown.save()]);
 
             interaction.deleteReply();
-            interaction.channel.send(`${input}`);
+            channel.send({ content: `${input}`, allowedMentions: { parse: [] } });
         } catch (error) {
             console.log(`⚠️  ${error}`);
         }
