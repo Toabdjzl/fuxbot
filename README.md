@@ -1,12 +1,10 @@
 # 🦊 Fuxbot
 
-Absolutely not working. Well, there is nothing else to say. Fuxbot is my personal learn-to-code bot where everything started. The mission was clear: develop features which are spot on for my communities, anything else is bonus. Times have changed and now the plan is to make a public ready bot which is manageable by admins in every community.
-
-# ✨ Features
+Absolutely not working - that's it! Fuxbot is my personal learn-to-code bot where everything started. The missions is clear: develop features which are spot on for my community.
 
 ## 🤖 Automations
 
-*Manage your community without being online. This is true magic.*
+*Manages your community without being online. This is true magic.*
 
 ### 📢 AutoPublishing
 > `/autopublish <add | remove | list>`
@@ -14,24 +12,20 @@ Absolutely not working. Well, there is nothing else to say. Fuxbot is my persona
 ### 🙂 AutoReaction
 > `/autoreact <add | remove | edit | list>`
 
-### 🧵 AutoThreading
-> `/autothread <add | remove | list>`
-
 ## 🔧 Utilities
 
 *Helpful commands to understand the bot better.*
 
 - ⚡ `/ping` - Check the bots response time.
 - 🆘 `/help` - Show help information for Fuxbot. 
-
-## 🔐 Local
-
-*These features are only available for my own communities.*
-
 - 🪦 `/revive` - Ping the `@🪦 Dead-Chat` role to bring back people to the chat and boost short-time activity.
-- 🎣 `/game [game] (message)` - Mention a game role to find a team mate.
-- 🪃 `/echo [message]` - Replies with your input.
+- 🪃 `/echo [message] (channel)` - Replies with your input.
 - 📷 `/avatar (member)` - Take a look at someones avatar.
+
+## 🧑‍🔬 Experimental
+
+*Even more broken.*
+
 - 🧹 `/prune [days] (roles)` - See how many members can be pruned from the server.
 
 # 🆘 Support
