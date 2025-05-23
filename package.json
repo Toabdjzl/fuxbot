@@ -1,30 +1,30 @@
 {
   "name": "fuxbot",
-  "version": "0.2.0",
-  "main": "src/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ."
-  },
-  "keywords": [],
-  "author": "Toabdjzl",
-  "license": "ISC",
+  "version": "0.2.1",
   "description": "absolutely not working",
-  "dependencies": {
-    "discord.js": "^14.18.0",
-    "dotenv": "^16.5.0",
-    "mongoose": "^8.13.2"
+  "keywords": [],
+  "homepage": "https://github.com/Toabdjzl/fuxbot#readme",
+  "bugs": {
+    "url": "https://github.com/Toabdjzl/fuxbot/issues"
   },
-  "devDependencies": {
-    "nodemon": "^3.1.9",
-    "npm-check-updates": "^17.1.18"
-  },
+  "license": "ISC",
+  "author": "Toabdjzl",
+  "main": "src/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Toabdjzl/fuxbot.git"
   },
-  "bugs": {
-    "url": "https://github.com/Toabdjzl/fuxbot/issues"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ."
   },
-  "homepage": "https://github.com/Toabdjzl/fuxbot#readme"
+  "dependencies": {
+    "discord.js": "^14.19.3",
+    "dotenv": "^16.5.0",
+    "mongoose": "^8.15.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10",
+    "npm-check-updates": "^18.0.1"
+  }
 }
