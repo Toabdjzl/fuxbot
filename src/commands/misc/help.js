@@ -1,6 +1,8 @@
+const { EmbedBuilder, ButtonBuilder, ActionRowBuilder, ButtonStyle, MessageFlags } = require('discord.js');
+
 module.exports = {
     name: 'help',
-    description: '🆘 Show help information for Fuxbot',
+    description: '🆘 Show help information about Fuxbot',
 
     callback: (client, interaction) => {
         const embedHelp = new EmbedBuilder()
@@ -15,7 +17,7 @@ module.exports = {
 
         const rowHelp = new ActionRowBuilder()
             .addComponents(buttonHelp);
-        
-        interaction.reply({ embeds: [embedHelp], components: [rowHelp], ephemeral: true });
+
+        interaction.reply({ embeds: [embedHelp], components: [rowHelp], flags: MessageFlags.Ephemeral });
     },
 };

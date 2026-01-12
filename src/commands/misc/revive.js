@@ -1,19 +1,18 @@
+const { MessageFlags } = require('discord.js');
 const Cooldown = require('../../models/Cooldown');
 
 module.exports = {
-    deleted: false,
     name: 'revive',
-    description: '🪦 Ping the DeadChat role',
+    description: '🪦 Ping the Dead Chat role to boost short-time activity',
 
     callback: async (client, interaction) => {
         try {
-            await interaction.deferReply({ ephemeral:true });
+            await interaction.deferReply({ flags: MessageFlags.Ephemeral });
 
-            const commandName = 'revive';
-            const guildId = interaction.guild.id;
+			// Fuxdev: 1296071593075675148; Fuxtown: 782653335119200278
             const requiredRole = ['1296071593075675148'];
 
-            let cooldown = await Cooldown.findOne({ guildId, commandName });
+            let cooldown = await Cooldown.findOne({ guildId: interaction.guild.id, commandName: interaction.commandName });
 
             const embedMissingRole = {
                 description: `You need to be <@&1296071593075675148> to run this command.`,
@@ -34,13 +33,12 @@ module.exports = {
 
                     await interaction.editReply({ embeds: [embedCooldown],
                         // content: `Server is on cooldown, come back after ${prettyMs(cooldown.endsAt - Date.now())}`,
-                        ephemeral: true,
                     });
                     return;
                 }
     
                 if (!cooldown) {
-                    cooldown = new Cooldown({ guildId, commandName });
+                    cooldown = new Cooldown({ guildId: interaction.guild.id, commandName: interaction.commandName });
                 }
     
                 cooldown.endsAt = Date.now() + 14400_000;

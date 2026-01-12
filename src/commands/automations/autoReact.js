@@ -8,7 +8,7 @@ const AutoReaction = require('../../models/AutoReaction');
    */
 
 module.exports = {
-    deleted: false,
+    deleted: true,
     name: 'autoreact',
     description: 'Manage your autoreactions',
     options: [

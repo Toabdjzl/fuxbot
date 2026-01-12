@@ -8,7 +8,7 @@ const AutoPublishing = require('../../models/AutoPublishing');
    */
 
 module.exports = {
-    deleted: false,
+    deleted: true,
     name: 'autopublish',
     description: 'Manage your autopublishings',
     options: [

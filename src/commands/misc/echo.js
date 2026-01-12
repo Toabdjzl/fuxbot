@@ -1,8 +1,7 @@
-const { ApplicationCommandOptionType, ChannelType } = require('discord.js');
+const { ApplicationCommandOptionType, ChannelType, MessageFlags } = require('discord.js');
 const Cooldown = require('../../models/Cooldown');
 
 module.exports = {
-    deleted: false,
     name: 'echo',
     description: '🪃 Replies with your input',
     options: [
@@ -21,34 +20,27 @@ module.exports = {
     ],
 
     callback: async (client, interaction) => {
-        const input = interaction.options.get('message').value;
-        const channel = interaction.options.getChannel('channel');
+        const input = interaction.options.getString('message');
+        const channel = interaction.options.getChannel('channel') ?? interaction.channel;
+
         try {
-            await interaction.deferReply({ ephemeral:true });
+            await interaction.deferReply({ flags: MessageFlags.Ephemeral });
 
-            const commandName = 'echo';
-            const guildId = interaction.guild.id;
-
-            let cooldown = await Cooldown.findOne({ guildId, commandName });
+			// Cooldown check
+            let cooldown = await Cooldown.findOne({ guildId: interaction.guild.id, commandName: interaction.commandName });
 
             if (cooldown && Date.now() < cooldown.endsAt) {
                 const cldwn = Math.round(cooldown.endsAt / 1_000);
-                await interaction.editReply({
-                    content: `Server is on cooldown, come back <t:${cldwn}:R>.`,
-                    ephemeral: true,
-                });
+                await interaction.editReply({ content: `Server is on cooldown, come back <t:${cldwn}:R>.` });
                 return;
             }
-
             if (!cooldown) {
-                cooldown = new Cooldown({ guildId, commandName });
+                cooldown = new Cooldown({ guildId: interaction.guild.id, commandName: interaction.commandName });
             }
-
             cooldown.endsAt = Date.now() + 600_000;
-
             await Promise.all([cooldown.save()]);
 
-            interaction.deleteReply();
+            await interaction.deleteReply();
             channel.send({ content: `${input}`, allowedMentions: { parse: [] } });
         } catch (error) {
             console.log(`⚠️  ${error}`);
